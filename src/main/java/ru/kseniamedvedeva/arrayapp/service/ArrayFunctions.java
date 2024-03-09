@@ -1,2 +1,6 @@
-package ru.kseniamedvedeva.arrayapp.service;public class ArrayFunctions {
+package ru.kseniamedvedeva.arrayapp.service;
+
+public class ArrayFunctions {
+
+
 }
