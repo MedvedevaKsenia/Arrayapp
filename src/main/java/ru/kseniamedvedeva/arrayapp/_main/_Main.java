@@ -18,6 +18,9 @@ public class _Main {
         int countOddNumb = CountOddNumbersInArray(intArray);
         System.out.println(countOddNumb + " numbers are odd in the array");
 
+        int countPrimeNum = CountPrimeNumbersInArray(intArray);
+        System.out.println(countPrimeNum + " numbers are prime in the array");
+
         int sum = SumNumbersInArray(intArray);
         System.out.println("Summa all numbers in the array = " + sum);
 

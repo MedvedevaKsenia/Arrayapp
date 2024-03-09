@@ -22,6 +22,16 @@ public class ArrayFunctions {
         return countOddNumb;
     }
 
+    public static int CountPrimeNumbersInArray(int[] intArray) {
+        int countPrimeNumb = 0;
+        for (int i : intArray) {
+            if ((i % 2 != 0) && (i % 3 != 0) && (i % 5 != 0)) {
+                countPrimeNumb++;
+            }
+        }
+        return countPrimeNumb;
+    }
+
     public static int SumNumbersInArray(int[] intArray) {
         int sum = 0;
         for (int i : intArray) {
