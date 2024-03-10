@@ -1,7 +1,6 @@
 package ru.kseniamedvedeva.arrayapp._main;
 
 import java.util.Arrays;
-import java.util.Random;
 
 import static ru.kseniamedvedeva.arrayapp.service.ArrayFunctions.*;
 
