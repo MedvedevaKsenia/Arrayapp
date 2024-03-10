@@ -1,5 +1,8 @@
 package ru.kseniamedvedeva.arrayapp._main;
 
+import java.util.Arrays;
+import java.util.Random;
+
 import static ru.kseniamedvedeva.arrayapp.service.ArrayFunctions.*;
 
 public class _Main {
@@ -7,10 +10,9 @@ public class _Main {
         int[] intArray = new int[10];
         System.out.println("Our array:");
         for (int i = 0; i < intArray.length; i++) {
-            intArray[i] = (int) (Math.random() * 10);
-            System.out.print(intArray[i] + ", ");
+            intArray[i] = (int) (Math.random() * 100);
         }
-        System.out.println();
+        System.out.println(Arrays.toString(intArray));
 
         int countEvenNumb = CountEvenNumbersInArray(intArray);
         System.out.println(countEvenNumb + " numbers are even in the array");
@@ -26,6 +28,5 @@ public class _Main {
 
         int zeroNum = FindZeroInArray(intArray);
         System.out.println(zeroNum + " zero in the array");
-
     }
 }

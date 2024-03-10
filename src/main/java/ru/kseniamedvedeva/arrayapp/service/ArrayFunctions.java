@@ -4,8 +4,8 @@ public class ArrayFunctions {
 
     public static int CountEvenNumbersInArray(int[] intArray) {
         int countEvenNumb = 0;
-        for (int i : intArray) {
-            if (intArray[i] % 2 == 0) {
+        for (int i = 0; i < intArray.length; i++) {
+            if ((intArray[i] == 0) || (intArray[i] % 2 == 0)) {
                 countEvenNumb++;
             }
         }
@@ -14,8 +14,8 @@ public class ArrayFunctions {
 
     public static int CountOddNumbersInArray(int[] intArray) {
         int countOddNumb = 0;
-        for (int i : intArray) {
-            if (intArray[i] % 2 != 0) {
+        for (int i = 0; i < intArray.length; i++) {
+            if ((intArray[i] != 0) && (intArray[i] % 2 != 0)) {
                 countOddNumb++;
             }
         }
@@ -24,9 +24,13 @@ public class ArrayFunctions {
 
     public static int CountPrimeNumbersInArray(int[] intArray) {
         int countPrimeNumb = 0;
-        for (int i : intArray) {
-            if ((i % 2 != 0) && (i % 3 != 0) && (i % 5 != 0)) {
-                countPrimeNumb++;
+        for (int i = 0; i < intArray.length; i++) {
+            if (intArray[i] > 1) {
+                for (int k = 2; k <= Math.sqrt(intArray[i]); k++) {
+                    if (intArray[i] % k == 0) {
+                        countPrimeNumb++;
+                    }
+                }
             }
         }
         return countPrimeNumb;
@@ -34,7 +38,7 @@ public class ArrayFunctions {
 
     public static int SumNumbersInArray(int[] intArray) {
         int sum = 0;
-        for (int i : intArray) {
+        for (int i = 0; i < intArray.length; i++) {
             sum += intArray[i];
         }
         return sum;
@@ -42,7 +46,7 @@ public class ArrayFunctions {
 
     public static int FindZeroInArray(int[] intArray) {
         int zeroNum = 0;
-        for (int i : intArray) {
+        for (int i = 0; i < intArray.length; i++) {
             if (intArray[i] == 0) {
                 zeroNum++;
             }
