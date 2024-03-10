@@ -44,6 +44,18 @@ public class ArrayFunctions {
         return sum;
     }
 
+    public static int DifferenceBetweenEvenAndOddIndexes(int[] intArray) {
+        int sumEvenNum = 0;
+        int sumOddNum = 0;
+        for (int i = 0; i < intArray.length; i++) {
+            if ((i == 0) || (i % 2 == 0)) {
+                sumEvenNum += intArray[i];
+            } else {sumOddNum += intArray[i];
+            }
+        }
+        return sumEvenNum - sumOddNum;
+    }
+
     public static int FindZeroInArray(int[] intArray) {
         int zeroNum = 0;
         for (int i = 0; i < intArray.length; i++) {

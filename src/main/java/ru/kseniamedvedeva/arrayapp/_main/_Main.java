@@ -26,6 +26,9 @@ public class _Main {
         int sum = SumNumbersInArray(intArray);
         System.out.println("Summa all numbers in the array = " + sum);
 
+        int difEvenOddNum = DifferenceBetweenEvenAndOddIndexes(intArray);
+        System.out.println("Difference between even and odd indexes = " + difEvenOddNum);
+
         int zeroNum = FindZeroInArray(intArray);
         System.out.println(zeroNum + " zero in the array");
     }
