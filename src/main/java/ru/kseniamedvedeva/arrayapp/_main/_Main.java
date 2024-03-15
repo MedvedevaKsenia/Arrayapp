@@ -1,8 +1,8 @@
 package ru.kseniamedvedeva.arrayapp._main;
 
-import java.util.Arrays;
+import ru.kseniamedvedeva.arrayapp.service.ArrayFunctions;
 
-import static ru.kseniamedvedeva.arrayapp.service.ArrayFunctions.*;
+import java.util.Arrays;
 
 public class _Main {
     public static void main(String[] args) {
@@ -13,22 +13,22 @@ public class _Main {
         }
         System.out.println(Arrays.toString(intArray));
 
-        int countEvenNumb = CountEvenNumbersInArray(intArray);
+        int countEvenNumb = ArrayFunctions.CountEvenNumbersInArray(intArray);
         System.out.println(countEvenNumb + " numbers are even in the array");
 
-        int countOddNumb = CountOddNumbersInArray(intArray);
+        int countOddNumb = ArrayFunctions.CountOddNumbersInArray(intArray);
         System.out.println(countOddNumb + " numbers are odd in the array");
 
-        int countPrimeNum = CountPrimeNumbersInArray(intArray);
+        int countPrimeNum = ArrayFunctions.CountPrimeNumbersInArray(intArray);
         System.out.println(countPrimeNum + " numbers are prime in the array");
 
-        int sum = SumNumbersInArray(intArray);
+        int sum = ArrayFunctions.SumNumbersInArray(intArray);
         System.out.println("Summa all numbers in the array = " + sum);
 
-        int difEvenOddNum = DifferenceBetweenEvenAndOddIndexes(intArray);
+        int difEvenOddNum = ArrayFunctions.DifferenceBetweenEvenAndOddIndexes(intArray);
         System.out.println("Difference between even and odd indexes = " + difEvenOddNum);
 
-        int zeroNum = FindZeroInArray(intArray);
+        int zeroNum = ArrayFunctions.FindZeroInArray(intArray);
         System.out.println(zeroNum + " zero in the array");
     }
 }
